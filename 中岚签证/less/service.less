@@ -1,0 +1,105 @@
+.breadcrumb{
+    background-color: transparent;
+    margin:10px 0;
+}
+.service-item,.consult-item{
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+    margin: 20px 0;
+    .liucheng{
+        padding-left: 150px;
+        position: relative;
+        margin-bottom: 30px;
+        background: url(../imgs/liucheng.png) no-repeat left center;
+        h3{
+            border-bottom: 1px dashed lightgrey;
+            margin: 20px 0;
+            line-height: 1;
+            color: #333;
+            padding-bottom: 10px;
+            &:hover{
+                color: #00AEF3;
+            }
+        }
+        p{
+            text-align: left;
+            line-height: 20px;
+            font-size: 14px;
+            .star{
+                margin-right: 20px;
+                color: #555;
+                i{
+                    font-style: normal!important;
+                    color: #FF9900;
+                }
+            }
+        }
+        .look{
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            color: #FF9900;
+            border: 1px solid #f90;
+            &:hover{
+                color: #fff;
+                background-color: #f90!important;
+                border: 0;
+            }
+        }
+    }
+    .zhoubian{
+        background: url(../imgs/zhoubian.png) no-repeat left center;
+    }
+    .quancheng{
+        background: url(../imgs/quancheng.png) no-repeat left center;
+    }
+}
+//右半边
+.sidebar{
+    text-align: left;
+    top: 0px;
+    z-index: -1;
+    h4{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+        margin-top: 50px;
+    }
+    .sidebar-right{
+        .sidebar-contact a{
+            font-size: 20px;
+            padding-left: 32px;
+            display: block;
+            margin: 15px 0;
+            line-height: 30px;
+            color: #f90;
+            background-image:url(../imgs/sidebar-bg.png);
+            background-repeat: no-repeat;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        ul{
+            padding-left: 0;
+            li{
+                line-height: 30px;
+                height: 30px;
+                list-style: none;
+                padding-left: 0;
+                a{
+                    color: #333;
+                    &:hover{
+                        text-decoration: none;
+                        color: #00AEF3;
+                    }
+                }
+            }
+        } 
+    }
+    .sidebar-qq{
+        background-position-y: -32px;
+    }
+    .sidebar-chat{
+        background-position-y: -64px;
+    }
+    
+}

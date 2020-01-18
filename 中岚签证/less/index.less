@@ -1,0 +1,693 @@
+@color:#0ba1e4;
+@bgc:#fff;
+//头部导航栏
+#header{
+    margin-top: 80px;
+    .container{
+        text-align: left;
+    }
+} 
+@media screen and(max-width:768px){
+    #header{
+        margin-top: 0!important;
+    }
+}
+@media screen and(min-width:992px){
+    .container{
+        width: 940px;
+    }
+}
+.logo{
+    float: left;
+}
+.active{
+    background: @bgc;
+    color:#00AEF3!important;
+    
+}
+// a{
+//  background-color: @bgc!important;
+//  &:hover{
+//          color: #00AEF3!important;
+//      }
+//}
+.navbar{
+//  background: rgba(255,255,255,0.3);
+    border: none;
+    padding: 15px 0;
+    border-bottom: 2px solid #0076D1;
+    margin-bottom: 0;
+    .container .navbar-header a{
+        margin: 0!important;
+    }
+    .container #myNav .navbar-nav li a{
+        margin: 0!important;
+    }
+}
+#myNav ul li{
+    background-color: transparent;
+    a{
+        background-color: transparent!important;
+        font-size: 16px;
+    }
+}
+.carousel-inner img{
+    height: auto!important;
+}
+h1,h2{
+    text-align: center;
+    font-weight: 300;
+}
+.line-big{
+    height: 2px;
+    width: 80px;
+    margin: 20px auto;
+    background:#0085DA;
+}
+//.carousel{
+//  margin-top: 100px;
+//}
+//数据
+@media (max-width: 991px) and (min-width: 768px){
+   .run-number {
+        font-size: 50px !important;
+        line-height: 1.5em !important;
+    }
+ 
+}
+//优点
+.advantage{
+    background: #e1e1e1;
+    
+}
+.index-row{
+    padding: 50px 0;
+}
+.our{
+    text-align: center;
+    background: @bgc;
+    padding: 20px;
+    .glyphicon{
+        font-size: 80px;
+        color: @color;
+        margin: 30px;
+    }
+    &:hover{
+        background: #0076D1;
+        color: @bgc;
+        .glyphicon{
+            color: @bgc;
+        }
+        p,h3{
+            color: @bgc;
+        }
+    }
+    h3{
+        color: #555;
+    }
+    p{
+        font-size: 12px;
+        color: #555;
+    }
+}
+.socus{
+    .col-sm-3{
+        font-size: 60px;
+        color: @color;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .btn{
+        background: @color;
+    }
+}
+.col-sm-3{
+    margin-top: 10px;
+}
+@media (max-width: 767px){
+        .navbar {
+        position: relative !important;
+        padding-bottom: 0;
+    }
+    .carousel{
+        margin-top: -20px;
+    }
+}
+.title{
+    padding: 20px 0;
+    h3{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+//服务
+.col-md-3{
+    text-align: center;
+    background: @bgc;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 0!important;
+    margin-top: 40px;
+    
+}
+//移上去变大
+.big{
+    transform: scale(1.1);
+    transition: all 0.5s;
+        box-shadow: 0px 0px 20px 0px rgba(45,183,245,0.5);
+//      transform: scale(1.1,1.1);
+        transition: all 0.5s;
+        z-index: 10;
+        color: @bgc;
+        background: @color;
+        h3{
+            color: @bgc;
+        }
+        a{
+            background-color: @color!important;
+            color: @bgc;
+            margin: 10px;
+            border: 1px solid @bgc;
+        }
+    }
+    h3{
+        color: @color;
+    }
+    p{
+        line-height: 40px;
+        font-size: 16px;
+    }
+    a{
+        color: @color;
+        background-color: @bgc!important;
+//      margin: 20px 0!important;
+        &:hover{
+            background-color: @bgc!important;
+            color: @color!important;
+        }
+}
+//小屏幕不变大
+@media screen and (max-width: 768px){
+    .big{
+        transform: none;
+    }
+}
+.container{
+    text-align: center;
+    .more{
+        color: @color;
+        border: 1px solid @color;
+        margin: 20px auto;
+        padding: 10px 15px;
+    }
+}
+h3{
+        line-height: 50px;
+}
+.outer{
+    border: 1px solid #398439;
+    padding: 10px;
+    position: relative;
+    margin-top: 50px;
+    .touxiang{
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        margin-left: -25px;
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    .inner{
+        padding: 15px;
+        text-align: left;
+        p{
+            font-size: 14px;
+            text-align: left;
+            line-height: 20px;
+        }
+        .left{
+            float: left;
+            background: #ccc;color: #fff;
+        }
+        .right{
+           float: right;
+           padding-left: 20px;
+           color: #ccc;
+           background: url(../imgs/position-icon.svg) no-repeat left center;
+        }
+    }
+}
+.webs-chat{
+    margin: 20px 0;
+}
+.jiantou{
+    width: 0;
+    height: 0;
+    border: 10px solid #3C763D;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -20px;
+    &:after{
+        content: "";
+        width: 0;
+        height: 0;
+        border: 9px solid #fff;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        left: 50%;
+        margin-left: -9px;
+        bottom: -7px;
+    }
+}
+.fuhao{
+    width: 70px;
+    height: 70px;
+    background-image: url(../imgs/yhgl-icon.svg);
+    background-size: cover;
+    margin: 20px auto 0;
+}
+//最新资讯
+.zixun{
+    margin-top: 20px;
+}
+.media-left{
+    width: 140px;
+    height: 110px;
+    a{
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 5px;
+        &:hover{
+            border:1px solid #0084B9 ;
+            transition: all 0.5s;
+        }
+    }
+    img{
+        width: 140px;
+        height: 110px;
+    }
+}
+.media-body{
+    color: #555;
+    h4{
+        overflow: hidden;
+        text-overflow: ellipsis; //省略号
+        word-wrap: break-word;   //
+        -webkit-line-clamp: 1;  //显示几行
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        margin: 0 0 5px;
+        color: @color;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+    .time{
+        float: left;
+    }
+    .clear{
+        clear: both;
+    }
+    .detail{
+        small{
+            text-align: left;
+            overflow: hidden;
+            line-height: 25px;
+            text-overflow: ellipsis;
+    //      word-wrap: break-word;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+        
+    }
+    .autor{
+        float: left;
+    }
+    .tail{
+        float: right;
+        cursor: pointer;
+        &:hover{
+            color: #E17107;
+        }
+    }
+}
+//合作伙伴
+.our-client{
+    margin: 50px 0;
+    .our-client-item .our-client-logo{
+       text-align: center;
+        border: 1px solid #c1c1c1;
+//      margin: 20px auto;
+        overflow: hidden;
+        padding: 0;
+        filter: grayscale(100%);
+        margin: 10px 0;
+        &:hover{
+                -webkit-filter: grayscale(0%);
+                border-color: #008EDF;
+                transition: all 0.5s;
+            }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+.contact-banner{
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    .waves{
+        position: absolute;
+    }
+    .line{
+        width: 150px;
+        height: 2px;
+        background: @bgc;
+        margin: 20px auto;
+    }
+    h2 small{
+        color: #fff!important;
+    }
+    .web-chat{
+        font-size: 30px;
+        border: 1px solid #fff;
+        background: transparent!important;
+        color: #fff;
+        &:hover{
+            background: #fff!important;
+            color: #0084B9;
+        }
+    }
+}
+
+.bottom{
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    h4{
+        text-align: left;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+        text-align: left;
+        li{
+            cursor: pointer;
+            a{
+                color: #fff;
+                background-color: transparent!important;
+                &:hover{
+                    color: #fff!important;
+            }
+            
+            }
+        }
+    }
+    .code{
+        width: 100%;
+        height: auto;
+        img{
+            width: auto;
+            max-height: 132px;
+        }
+    }
+}
+.bottom .footer-item {
+    height: 160px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 1em;
+    border-left: 2px solid #c1c1c1;
+    overflow: hidden;
+    h2{
+        margin-top: 10px;
+        img{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    } 
+}
+.footer-item-last{
+    border-right: 2px solid #c1c1c1;
+}
+footer{
+    background-color: #999999;
+    .copyright{
+        text-align: center;
+        .copy-link{
+            img{
+                background-color: #999;
+                padding-right: 10px;
+            }
+            p{
+                color: #fff;
+                display: inline-block;
+                background-color: #999!important;
+                &:hover{
+                    background-color: #999;
+                }
+            } 
+        }
+    }
+}
+.clan-slider{
+    ul {
+        position: fixed;
+        right: 20px;
+        top: 30%;
+         li{
+            list-style: none;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            a{
+                display: block;
+                margin: 5px 0!important;
+                width: 50px;
+                height: 50px;
+                background-color: #f5f5f5!important;
+                background-image: url(../imgs/clan-slider.png);
+                background-repeat: no-repeat;
+                background-position-x: 0;
+                &:hover{
+                    background-color: #0BA1E4!important;
+                    background-position-x: -45px;
+                }
+            }
+            #slider-chat{
+               background-position-y:-93px;
+            }
+            #slider-qq{
+                background-position-y:-138px;
+            }
+            #slider-phone{
+                background-position-y:-184px;
+            }
+            #slider-wechat{
+                background-position-y: -230px;
+            }
+            #slider-goTop{
+                background-position-y:0px;
+            }
+            .clan-slider-tips{
+                font-size: 20px;
+                background: #0BA1E4;
+                color: #fff;
+                height: 50px;
+                float: left;
+                position: absolute;
+                top: 0px;
+                left: -130px;
+                display: none;
+                line-height: 50px;
+                width: 130px;
+                text-align: right;
+                img{
+                   width: 200px;
+                   height: 200px; 
+                }
+                
+            }
+            .erweima{
+                    top: -165px;
+                    left: -200px;
+            }
+        }
+    }
+      
+}
+@media screen and (max-width:992px)
+{
+    .footer-contact h2{
+        font-size: 20px;
+    }
+    #slider-goTop{
+        border-radius: 50%;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .vx{
+       text-align: left;
+    }
+    
+}
+.mob-bottom{
+        display: none;
+        border-top: 2px solid #0076D1;
+        background: #fff;
+        height: 50px;
+        line-height: 50px;
+    }
+@media screen and (max-width:768px)
+{
+    .mob-bottom{
+        display: block;
+    }
+}
+
+#outer{
+    .nb-nodeboard-left-bottom{
+        left: 1px;
+        bottom: 1px;
+    }
+    .nb-nodeboard-base{
+        width: 240px;
+        border-radius: 3px;
+        position: fixed;
+        z-index: 3;
+        .nb-nodeboard-contain-base{
+            .nb-nodeboard-top{
+                .nb-head-title{
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 14px;
+                    background-color: #00aef3;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    color: #fff;
+                    padding:0 10px;
+                }
+                #nb_nodeboard_close{
+                    display: inline-block;
+                    width: 34px;
+                    height: 34px;
+                    margin-top: 2px;
+                    float: right;
+                    cursor: pointer;
+                    background-color: transparent;
+                    background-repeat: no-repeat;
+                    background-image:url(../imgs/nodeMin.png);
+                }
+            }
+            #form-control-static{
+                background-color: #ccc;
+                .nb-nodeboard-text{
+                    padding: 10px 0;
+                    border-bottom: 1px solid #C0C0C0;
+                    p{
+                        color: #666;
+                        font-size: 14px;
+                        line-height: 14px;
+                        margin: 0;
+                        padding-left: 10px;
+                    }
+                    span{
+                        color: #999999;
+                        font-size: 12px;
+                        line-height: 12px;
+                        padding-left: 10px;
+                    }
+                }
+                #nb_nodeboard_form{
+                    .nb-nodeboard-content{
+                        position: relative;
+                        width: 222px;
+                        margin: 7px auto 0;
+                        .nb-nodeboard-set-content{
+                            width: 212px;
+                            height: 79px;
+                            margin: 12px auto 7px;
+                            padding: 0 4px;
+                            resize: none;
+                            overflow: hidden;
+                            border: 1px solid #D5D5D5;
+                            background-color: #FFFFFF;
+                            text-align: left;
+                        }     
+                    }
+                    .nb-nodeboard-name{
+                        width: 212px;
+                        height: 32px;
+                        line-height: 32px;
+                        margin: 7px 0 0;
+                        border: 1px solid #d5d5d5;
+                        position: relative;
+                        background-color: #fff;
+                        input{
+                            width: 140px;
+                            height: 30px;
+                            line-height: 30px;
+                            display: inline-block;
+                            border: none;
+                            font-size: 14px;
+                        }
+                        .nb-nodeboard-icon{
+                            width: 35px;
+                            height: 30px;
+                            line-height: 30px;
+                            display: inline-block;
+                            background-color: #fff;
+                            vertical-align: middle;
+                            border-right: 1px solid #fff;
+                        }
+                        .nodeName{
+                            background: url(../imgs/user.png) no-repeat center center;
+                        }
+                        .nodePhone{
+                            background: url(../imgs/nodephone.png) no-repeat center center;
+                        }
+                        .nodeMail{
+                            background: url(../imgs/nodemail.png) no-repeat center center;
+                        }
+                        .nodeAddress{
+                            background: url(../imgs/nodelocation.png) no-repeat center center;
+                        }
+                    } 
+                    .nb-nodeboard-send{
+                        width: 90px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        border-radius: 2px;
+                        font-size: 14px;
+                        color: #fff;
+                        cursor: pointer;
+                        background-color: #00AEF3;
+                        margin: 10px 0;
+                    }
+                    
+                }
+            }
+        } 
+        
+    } 
+} 
